@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1p --group-directories-first | sed ':a;N;$!ba;s/\n/, /g;s/\(.*\), /\1\n/'
+ls -amvp
