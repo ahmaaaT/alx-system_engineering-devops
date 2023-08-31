@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -pd . .. [0-9A-Za-z.]* | paste -sd ,
+ls -a1p --group-directories-first | sed ':a;N;$!ba;s/\n/, /g;s/\(.*\), /\1\n/'
