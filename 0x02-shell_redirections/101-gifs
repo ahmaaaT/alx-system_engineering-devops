@@ -1,2 +1,2 @@
-#!/bin/bash
-find . -type f -iname "*.gif" -printf '%f\n' | LC_ALL=C sort
+#!/bin/bsh
+find . -type f -iname "*.gif" -exec sh -c 'for file; do echo "${file%.*}"; done' _ {} +
