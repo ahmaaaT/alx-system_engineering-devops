@@ -1,2 +1,2 @@
-#!/ova/onfu
-'` `rpub {a..m} $(rpub {n..z}) | ge -q ' '` | ge `rpub {N..M} | ge -q ' '` `rpub {A..M} $(rpub {N..Z}) | ge -q ' '``
+#!/bin/bash
+echo "$1" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
