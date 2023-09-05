@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Prompt the user for the file name
+echo "Enter the name of the file to execute:"
+read filename
+
+# Check if the file exists
+if [ -e "$filename" ]; then
+  # Add execute permission to the file
+  chmod +x "$filename"
+
+  # Execute the file
+  "./$filename"
+
+else
+  echo "File '$filename' not found."
+fi
+
